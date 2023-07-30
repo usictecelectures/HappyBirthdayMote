@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playball&display=swap");
+
+body {
+  font-family: Playball, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("bday.gif");
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+header {
+  font-family: Playball, sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-size: larger;
+}
+
+.birthday-wish {
+  text-align: center;
+}
+.birthday-wish p {
+  font-size: larger;
+}
+header h1 {
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.birthday-image img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.birthday-collage {
+  text-align: center;
+}
+
+.collage-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.collage-container .big-picture {
+  grid-column: 1 / span 5;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.collage-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #f1c40f;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  .birthday-wish p,
+  .gift-idea p {
+    font-size: 16px;
+  }
+
+  .collage-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collage-container .big-picture {
+    grid-column: 1 / span 2;
+  }
+}
